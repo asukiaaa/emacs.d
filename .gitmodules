@@ -1,6 +1,3 @@
-[submodule "rhtml"]
-	path = rhtml
-	url = https://github.com/eschulte/rhtml.git
 [submodule "auto-complete"]
 	path = auto-complete
 	url = https://github.com/auto-complete/auto-complete.git
