@@ -13,3 +13,6 @@
 [submodule "yasnippet"]
 	path = yasnippet
 	url = https://github.com/capitaomorte/yasnippet.git
+[submodule "snippets/yasnippets-rails"]
+	path = snippets/yasnippets-rails
+	url = https://github.com/eschulte/yasnippets-rails.git
