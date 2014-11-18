@@ -4,3 +4,12 @@
 [submodule "auto-complete"]
 	path = auto-complete
 	url = https://github.com/auto-complete/auto-complete.git
+[submodule "popup-el"]
+	path = popup-el
+	url = http://github.com/auto-complete/popup-el.git
+[submodule "wc-mode"]
+	path = wc-mode
+	url = https://github.com/bnbeckwith/wc-mode.git
+[submodule "yasnippet"]
+	path = yasnippet
+	url = https://github.com/capitaomorte/yasnippet.git
