@@ -5,9 +5,12 @@
 ;; タブの表示幅の指定&タブを使うのを抑止 
 (setq-default indent-tabs-mode nil)
 
+;; set indent width as 2 spaces
 (setq-default tab-width 2)
 ;;(setq indent-line-function 'insert-tab)
 (setq js-indent-level 2)
+(add-hook 'java-mode-hook' (lambda()
+                             (setq c-basic-offset 2)))
 
 ;; 行番号を表示
 (custom-set-variables
