@@ -2,6 +2,9 @@
 (setq x-select-enable-clipboard t)
 ))
 
+;; backup file 作成中止
+(setq make-backup-files nil)
+
 ;; タブの表示幅の指定&タブを使うのを抑止 
 (setq-default indent-tabs-mode nil)
 
