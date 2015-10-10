@@ -2,6 +2,10 @@
 (setq x-select-enable-clipboard t)
 ))
 
+;; magic commentの停止
+;; # -​*- coding: utf-8 -*​-
+(setq ruby-insert-encoding-magic-comment nil)
+
 ;; backup file 作成中止
 (setq make-backup-files nil)
 
