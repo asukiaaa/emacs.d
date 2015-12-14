@@ -3,7 +3,7 @@
 ))
 
 ;; theme setting
-(load-theme 'tango-dark t)
+(load-theme 'manoj-dark t)
 
 ;; magic commentの停止
 ;; # -​*- coding: utf-8 -*​-
