@@ -2,6 +2,9 @@
 (setq x-select-enable-clipboard t)
 ))
 
+;; theme setting
+(load-theme 'tango-dark t)
+
 ;; magic commentの停止
 ;; # -​*- coding: utf-8 -*​-
 (setq ruby-insert-encoding-magic-comment nil)
