@@ -3,7 +3,7 @@
 ))
 
 ;; theme setting
-(load-theme 'manoj-dark t)
+;; (load-theme 'manoj-dark t)
 
 ;; magic commentの停止
 ;; # -​*- coding: utf-8 -*​-
@@ -66,14 +66,6 @@
 (add-hook 'lisp-mode-hock '(lambda()
   (local-set-key (kdd "RET") 'newline-and-indent)))
 
-;;yasnipet
-(add-to-list 'load-path
-             (expand-file-name "~/.emacs.d/yasnippet"))
-(require 'yasnippet)
-(yas-global-mode 1)
-(yas/load-directory "~/.emacs.d/yasnippet/snippets")
-(yas/load-directory "~/.emacs.d/snippets/yasnippets-rails")
-
 ;;window devide
 (split-window-horizontally)
 
@@ -87,10 +79,4 @@
 (add-hook 'clojure-mode-hook 'rainbow-delimiters-mode)
 (add-hook 'prog-mode-hook 'rainbow-delimiters-mode)
 (global-rainbow-delimiters-mode)
-
-;;auto-complete
-;;(add-to-list 'load-path (expand-file-name "~/.emacs.d/auto-complete"))
-;;(require 'auto-complete-config)
-;;(add-to-list 'ac-dictionary-directories "~/.emacs.d/auto-complete/ac-dict")
-;;(ac-config-default)
 
