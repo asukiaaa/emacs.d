@@ -1,6 +1,9 @@
 (cond (window-system
 (setq x-select-enable-clipboard t)
 ))
+(require 'package)
+(add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
+(package-initialize)
 
 ;; theme setting
 ;; (load-theme 'manoj-dark t)
@@ -80,3 +83,18 @@
 (add-hook 'prog-mode-hook 'rainbow-delimiters-mode)
 (global-rainbow-delimiters-mode)
 
+;; for paredit
+(require 'paredit)
+(require 'clojure-mode)
+
+
+;; for clojure cider
+(add-to-list 'exec-path "~/bin")
+(add-to-list 'auto-mode-alist '("\\.clj$" . clojure-mode))
+(add-hook 'clojure-mode-hook 'paredit-mode)
+
+;; for cider
+(add-hook 'cider-repl-mode-hook 'paredit-mode)
+
+;; set alt as meta key
+(setq x-alt-keysym 'meta)
