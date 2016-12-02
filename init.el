@@ -101,3 +101,16 @@
 
 ;; set alt as meta key
 (setq x-alt-keysym 'meta)
+
+;; set cpp for arduino file
+(add-to-list 'auto-mode-alist '("\\.ino" . c++-mode))
+
+;; haml mode
+(require 'haml-mode)
+
+;; ejs
+(add-to-list 'auto-mode-alist '("\\.ejs" . html-mode))
+
+
+;; pug-mode
+(require 'pug-mode)
