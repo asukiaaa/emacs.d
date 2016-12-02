@@ -25,6 +25,9 @@
 (add-hook 'java-mode-hook' (lambda()
                              (setq c-basic-offset 2)))
 
+(add-hook 'sh-mode-hook' (lambda()
+                           (setq sh-basic-offset 2)))
+
 ;; 行番号を表示
 (custom-set-variables
 '(global-linum-mode t)
