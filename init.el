@@ -90,7 +90,6 @@
 (require 'paredit)
 (require 'clojure-mode)
 
-
 ;; for clojure cider
 (add-to-list 'exec-path "~/bin")
 (add-to-list 'auto-mode-alist '("\\.clj$" . clojure-mode))
@@ -111,6 +110,9 @@
 ;; ejs
 (add-to-list 'auto-mode-alist '("\\.ejs" . html-mode))
 
-
 ;; pug-mode
 (require 'pug-mode)
+
+;; cargo for rust
+;(add-to-list 'exec-path (expand-file-name "~/.cargo/bin"))
+(add-hook 'rust-mode-hook 'cargo-minor-mode)
