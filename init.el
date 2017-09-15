@@ -116,3 +116,6 @@
 ;; cargo for rust
 ;(add-to-list 'exec-path (expand-file-name "~/.cargo/bin"))
 (add-hook 'rust-mode-hook 'cargo-minor-mode)
+
+;; opan FreeCAD macro with python format
+(add-to-list 'auto-mode-alist '("\\.FCMacro$" . python-mode))
