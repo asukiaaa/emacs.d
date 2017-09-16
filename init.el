@@ -27,6 +27,8 @@
 
 (add-hook 'sh-mode-hook' (lambda()
                            (setq sh-basic-offset 2)))
+(add-hook 'typescript-mode-hook' (lambda()
+                                   (setq typescript-indent-level 2)))
 
 ;; 行番号を表示
 (custom-set-variables
