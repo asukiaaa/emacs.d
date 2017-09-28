@@ -121,3 +121,6 @@
 
 ;; opan FreeCAD macro with python format
 (add-to-list 'auto-mode-alist '("\\.FCMacro$" . python-mode))
+
+;; magit shortcut
+(global-set-key (kbd "C-x g") 'magit-status)
