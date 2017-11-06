@@ -128,3 +128,7 @@
 ;; Japanese font setting for ubuntu17.10
 (set-fontset-font nil 'japanese-jisx0208 "TakaoPGothic")
 (add-to-list 'face-font-rescale-alist '(".*Takao P.*" . 0.9)) ; 日本語を少し小さく
+
+;; company-mode (auto fill)
+;; http://company-mode.github.io/
+(add-hook 'after-init-hook 'global-company-mode)
