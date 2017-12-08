@@ -131,3 +131,4 @@
 ;; company-mode (auto fill)
 ;; http://company-mode.github.io/
 (add-hook 'after-init-hook 'global-company-mode)
+(set 'company-dabbrev-downcase nil) ; disable replacing words to lowercase style
