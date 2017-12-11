@@ -90,6 +90,7 @@
 ;; for paredit
 (require 'paredit)
 (require 'clojure-mode)
+(add-hook 'slime-repl-mode-hook 'paredit-mode)
 
 ;; for clojure cider
 (add-to-list 'exec-path "~/bin")
@@ -132,3 +133,6 @@
 ;; http://company-mode.github.io/
 (add-hook 'after-init-hook 'global-company-mode)
 (set 'company-dabbrev-downcase nil) ; disable replacing words to lowercase style
+
+;; slime for roswell
+(load (expand-file-name "~/.roswell/helper.el"))
