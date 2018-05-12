@@ -87,18 +87,20 @@
 (add-hook 'prog-mode-hook 'rainbow-delimiters-mode)
 (global-rainbow-delimiters-mode)
 
-;; for paredit
-(require 'paredit)
+;; for clojure
 (require 'clojure-mode)
-(add-hook 'slime-repl-mode-hook 'paredit-mode)
-
-;; for clojure cider
 (add-to-list 'exec-path "~/bin")
 (add-to-list 'auto-mode-alist '("\\.clj$" . clojure-mode))
-(add-hook 'clojure-mode-hook 'paredit-mode)
 
-;; for cider
+;; for paredit
+(require 'paredit)
+(add-hook 'clojure-mode-hook 'paredit-mode)
 (add-hook 'cider-repl-mode-hook 'paredit-mode)
+(add-hook 'lisp-mode-hook 'paredit-mode)
+(add-hook 'el-mode-hook 'paredit-mode)
+(add-hook 'slime-repl-mode-hook 'paredit-mode)
+(add-hook 'racket-mode-hook 'paredit-mode)
+(add-hook 'racket-repl-mode-hook 'paredit-mode)
 
 ;; set alt as meta key
 (setq x-alt-keysym 'meta)
