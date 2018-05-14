@@ -138,3 +138,7 @@
 
 ;; slime for roswell
 (load (expand-file-name "~/.roswell/helper.el"))
+
+;; ctp as web-mode
+(add-to-list 'auto-mode-alist '("\\.ctp$" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.php$" . web-mode))
