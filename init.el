@@ -142,3 +142,6 @@
 ;; ctp as web-mode
 (add-to-list 'auto-mode-alist '("\\.ctp$" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.php$" . web-mode))
+
+;; launch as xml-mode for ROS
+(add-to-list 'auto-mode-alist '("\\.launch" . xml-mode))
