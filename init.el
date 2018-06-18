@@ -97,7 +97,7 @@
 (add-hook 'clojure-mode-hook 'paredit-mode)
 (add-hook 'cider-repl-mode-hook 'paredit-mode)
 (add-hook 'lisp-mode-hook 'paredit-mode)
-(add-hook 'el-mode-hook 'paredit-mode)
+(add-hook 'emacs-lisp-mode-hook 'paredit-mode)
 (add-hook 'slime-repl-mode-hook 'paredit-mode)
 (add-hook 'racket-mode-hook 'paredit-mode)
 (add-hook 'racket-repl-mode-hook 'paredit-mode)
